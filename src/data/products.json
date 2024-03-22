@@ -1,0 +1,233 @@
+[
+  {
+    "id": 3,
+    "title": "Dark Side of the Moon",
+    "artist": "Pink Floyd",
+    "release_year": 1973,
+    "price_usd": 25.99,
+    "genre": "Progressive Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "release_year": 1982,
+    "price_usd": 20.50,
+    "genre": "Pop",
+    "condition": "Used - Very Good",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 1,
+    "title": "Abbey Road",
+    "artist": "The Beatles",
+    "release_year": 1969,
+    "price_usd": 30.00,
+    "genre": "Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "release_year": 1980,
+    "price_usd": 22.99,
+    "genre": "Hard Rock",
+    "condition": "Used - Like New",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "The Wall",
+    "artist": "Pink Floyd",
+    "release_year": 1979,
+    "price_usd": 28.75,
+    "genre": "Progressive Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Rumours",
+    "artist": "Fleetwood Mac",
+    "release_year": 1977,
+    "price_usd": 27.99,
+    "genre": "Rock",
+    "condition": "New",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Led Zeppelin IV",
+    "artist": "Led Zeppelin",
+    "release_year": 1971,
+    "price_usd": 32.00,
+    "genre": "Hard Rock",
+    "condition": "Used - Very Good",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "A Night at the Opera",
+    "artist": "Queen",
+    "release_year": 1975,
+    "price_usd": 26.49,
+    "genre": "Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "release_year": 1976,
+    "price_usd": 24.99,
+    "genre": "Rock",
+    "condition": "Used - Good",
+    "rating": 3,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Born to Run",
+    "artist": "Bruce Springsteen",
+    "release_year": 1975,
+    "price_usd": 29.99,
+    "genre": "Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "The Doors",
+    "artist": "The Doors",
+    "release_year": 1967,
+    "price_usd": 18.75,
+    "genre": "Psychedelic Rock",
+    "condition": "Used - Very Good",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Sgt. Pepper's Lonely Hearts Club Band",
+    "artist": "The Beatles",
+    "release_year": 1967,
+    "price_usd": 35.00,
+    "genre": "Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Nevermind",
+    "artist": "Nirvana",
+    "release_year": 1991,
+    "price_usd": 21.99,
+    "genre": "Grunge",
+    "condition": "New",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "The Velvet Underground & Nico",
+    "artist": "The Velvet Underground",
+    "release_year": 1967,
+    "price_usd": 33.50,
+    "genre": "Art Rock",
+    "condition": "Used - Very Good",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Blood on the Tracks",
+    "artist": "Bob Dylan",
+    "release_year": 1975,
+    "price_usd": 26.00,
+    "genre": "Folk Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Pet Sounds",
+    "artist": "The Beach Boys",
+    "release_year": 1966,
+    "price_usd": 31.99,
+    "genre": "Baroque Pop",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+    "artist": "David Bowie",
+    "release_year": 1972,
+    "price_usd": 29.50,
+    "genre": "Glam Rock",
+    "condition": "Used - Like New",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Bridge over Troubled Water",
+    "artist": "Simon & Garfunkel",
+    "release_year": 1970,
+    "price_usd": 23.25,
+    "genre": "Folk Rock",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Chega de Saudade",
+    "artist": "João Gilberto",
+    "release_year": 1959,
+    "price_usd": 36.75,
+    "genre": "Bossa Nova",
+    "condition": "Used - Very Good",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "A Tábua de Esmeralda",
+    "artist": "Jorge Ben Jor",
+    "release_year": 1974,
+    "price_usd": 32.50,
+    "genre": "MPB",
+    "condition": "New",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Acabou Chorare",
+    "artist": "Novos Baianos",
+    "release_year": 1972,
+    "price_usd": 27.99,
+    "genre": "Tropicália",
+    "condition": "New",
+    "rating": 4,
+    "image": ""
+  }
+]
