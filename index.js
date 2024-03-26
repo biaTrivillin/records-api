@@ -24,7 +24,7 @@ server.get('/search', (req,res) => {
 
         const stringRecords = JSON.stringify(record);
 
-        if (stringRecords.toLowerCase().includes(q.toLowerCase())) {
+        if (stringRecords.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ""))) {
 
             filteredRecords.push(record);
 
@@ -45,7 +45,7 @@ server.get("/filter", (req, res) => {
 
     const filteredFields = fieldsArray.filter((item) => item.q != undefined); //retirar letras maiusculas
     
-    const filteredRecords = products.filter((record) => filteredFields.every((field) => record[field.n].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") === field.q ));
+    const filteredRecords = products.filter((record) => filteredFields.every((field) => record[field.n].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") === field.q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")));
 
     return res.json(maxPrice != undefined ? filteredRecords.filter((record) => record.price_usd <= maxPrice) : filteredRecords);
 
@@ -53,7 +53,7 @@ server.get("/filter", (req, res) => {
 
 server.get("/findByName", (req, res) => {
     const name = req.query.name;
-    return res.json(products.filter((record) => record.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == name));
+    return res.json(products.filter((record) => record.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")));
 });
 
 server.get("/findById", (req, res) => {
