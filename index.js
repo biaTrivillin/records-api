@@ -17,14 +17,14 @@ server.get('/', (req,res) => {
 })
 
 server.get('/search', (req,res) => {
-    const term = req.query.term;
+    const q = req.query.q;
     const filteredRecords = []
 
     products.forEach((record) => {
 
         const stringRecords = JSON.stringify(record)
 
-        if (stringRecords.toLowerCase().includes(term.toLowerCase())) {
+        if (stringRecords.toLowerCase().includes(q.toLowerCase())) {
 
             filteredRecords.push(record);
 
@@ -35,6 +35,21 @@ server.get('/search', (req,res) => {
     return res.json(filteredRecords)
 })
 
+server.get("/filter", (req, res)=>{
+    const genre = req.query.genre;
+    const price = req.query.price;
+    const artist = req.query.artist;
+    // const minPrice = req.query.minprice;
+    // const maxPrice = req.query.maxprice;
+    const condition = req.query.condition;
+
+    const array = [ {q: genre, n: "genre"}, {q: artist, n: "artist"}, {q: price, n: "price"}, {q: condition, n: "condition"}]
+
+    const arrayTwo = array.filter((item ) => item.q != undefined) //retirar letras maiusculas 
+
+    return res.json(products.filter((item) => arrayTwo.every((field) => item[field.n].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") === field.q )))
+
+})
 
 server.get("/findByArtist", (req, res)=>{
     const artist = req.query.artist;
@@ -48,7 +63,7 @@ server.get("/findByGenre", (req, res)=>{
 
 server.get("/findByName", (req, res)=>{
     const name = req.query.name;
-    return res.json(products.filter((record) => record.name == name))
+    return res.json(products.filter((record) => record.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") == name))
 })
 
 server.get("/findById", (req, res)=>{
