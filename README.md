@@ -51,7 +51,7 @@ RESPONSE EXEMPLE
     
     [
       {
-        "id": 3,
+        "id": 1,
         "title": "Dark Side of the Moon",
         "artist": "Pink Floyd",
         "release_year": 1973,
@@ -62,7 +62,7 @@ RESPONSE EXEMPLE
         "image": ""
       },
       {
-        "id": 3,
+        "id": 2,
         "title": "Thriller",
         "artist": "Michael Jackson",
         "release_year": 1982,
@@ -109,7 +109,7 @@ RESPONSE EXEMPLE
     
     [
       {
-        "id": 3,
+        "id": 4,
         "title": "Dark Side of the Moon",
         "artist": "Pink Floyd",
         "release_year": 1973,
@@ -120,7 +120,7 @@ RESPONSE EXEMPLE
         "image": ""
       },
       {
-        "id": 3,
+        "id": 9,
         "title": "Back in Black",
         "artist": "AC/DC",
         "release_year": 1980,
@@ -155,7 +155,7 @@ RESPONSE EXEMPLE 1
     
     [
       {
-        "id":1,
+        "id":5,
         "title":"Abbey Road",
         "artist":"The Beatles",
         "release_year":1969,
@@ -166,7 +166,7 @@ RESPONSE EXEMPLE 1
         "image":""
       },
       {
-        "id":1,"title":"Rumours",
+        "id":48,"title":"Rumours",
         "artist":"Fleetwood Mac",
         "release_year":1977,
         "price_usd":27.99,
@@ -176,8 +176,8 @@ RESPONSE EXEMPLE 1
         "image":""
       },  
       {
-        "id":3,"title":
-        "A Night at the Opera",
+        "id":50,
+        "title":"A Night at the Opera",
         "artist":"Queen",
         "release_year":1975,
         "price_usd":26.49,
@@ -201,7 +201,8 @@ RESPONSE EXEMPLE 2
     
     [
       {
-        "id":1,"title":"Rumours",
+        "id":48,
+        "title":"Rumours",
         "artist":"Fleetwood Mac",
         "release_year":1977,
         "price_usd":27.99,
@@ -211,8 +212,8 @@ RESPONSE EXEMPLE 2
         "image":""
       },        
       {
-        "id":3,"title":
-        "A Night at the Opera",
+        "id":50,
+        "title":"A Night at the Opera",
         "artist":"Queen",
         "release_year":1975,
         "price_usd":26.49,
@@ -226,7 +227,7 @@ RESPONSE EXEMPLE 2
 
 ##
 
-### Search for ID
+### Search By ID
 Search for records IDs<br>
 
 <div>
@@ -238,6 +239,40 @@ REQUEST EXEMPLE
 <div>
     
     /search?id=3
+</div><br>
+
+RESPONSE EXEMPLE
+
+<div>
+    
+    {
+      "id": 3,
+      "title": "The Wall",
+      "artist": "Pink Floyd",
+      "release_year": 1979,
+      "price_usd": 28.75,
+      "genre": "Progressive Rock",
+      "condition": "New",
+      "rating": 5,
+      "image": ""
+    },
+  
+</div><br>
+
+##
+
+### Search By Name
+Search for records Name<br>
+
+<div>
+    
+    /findByName?name=name
+</div><br>
+
+REQUEST EXEMPLE
+<div>
+    
+    /findByName?name=the%20wall
 </div><br>
 
 RESPONSE EXEMPLE
