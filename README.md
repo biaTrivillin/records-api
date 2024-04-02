@@ -21,16 +21,12 @@ Thank you for your patience as we continue to expand its features!<br> </sup>
 </div>
 <br>
 
-## URL 
-The project has been deployed on Vercel, and you can consume the API via the following link:
-<div>
-    
-    GET link
-</div>
+## GET URL 
 
-If you prefer to clone the repository, you can access the API through port 3000.
+Clone the repository and access the API through port 3000.
 <div>
-    
+
+    git clone https://github.com/biaTrivillin/records-api
     npm start
 </div>
 <div>
