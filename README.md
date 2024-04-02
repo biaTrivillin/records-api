@@ -26,7 +26,7 @@ Thank you for your patience as we continue to expand its features!<br> </sup>
 Clone the repository and access the API through port 3000.
 <div>
 
-    git clone https://github.com/biaTrivillin/records-api
+    git clone https://github.com/biaTrivillin/records-api.git
     
     npm start
 </div>
